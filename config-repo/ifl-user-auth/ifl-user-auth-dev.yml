@@ -1,11 +1,6 @@
 server:
   port: 8080
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
 management:
   tracing:
     sampling:
@@ -13,9 +8,9 @@ management:
       
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/simplytrack
-    username: postgres
-    password: simplytrack 
+    url: jdbc:postgresql://localhost:5432/IFL
+    username: vamsipeddi
+    password: vamsipeddi1013 
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

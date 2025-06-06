@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/bpeddi/strack-microservices.git
+          uri: https://github.com/VamsiPeddi/fantasy_cricket.git
           search-paths: 'config-repo/{application}'
           clone-on-start: true
           default-label: main
