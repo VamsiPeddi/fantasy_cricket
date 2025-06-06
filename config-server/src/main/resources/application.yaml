@@ -1,0 +1,38 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bpeddi/strack-microservices.git
+          search-paths: 'config-repo/{application}'
+          clone-on-start: true
+          default-label: main
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+# spring:
+#   profiles:
+#     active: native
+  # datasource:
+  #   url: jdbc:postgresql://localhost:5432/simplytrack
+  #   username: postgres
+  #   password: 
+  #   driver-class-name: org.postgresql.Driver
+  # jpa:
+  #   hibernate:
+  #     ddl-auto: update
+  #   properties:
+  #     hibernate:
+  #       dialect: org.hibernate.dialect.PostgreSQLDialect
+  #       format_sql: true
+  #   show-sql: true
+
