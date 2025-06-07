@@ -1,0 +1,22 @@
+POST http://localhost:8080/api/auth/register
+User-Agent: vscode-restclient
+Content-Type: application/json
+
+{
+    "email": "vamsi@gmail.com",
+    "username": "vpeddi",
+    "password": "vamsi",
+    "roles": ["ROLE_USER"]
+}
+
+########
+
+POST http://localhost:8080/api/auth/login
+User-Agent: vscode-restclient
+Content-Type: application/json
+
+{
+    "email": "vamsi@gmail.com",
+    "password": "vamsi",
+    "roles": ["ROLE_USER"]
+}
